@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: lab14-mauriciordgz
+    name: lab14empresariales
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
     healthCheckPath: /health
-    autoDeployTrigger: off
+    autoDeployTrigger: checksPass
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production

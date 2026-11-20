@@ -26,12 +26,3 @@ jobs:
         with:
           name: Lab14-publicado
           path: published/
-      - name: Deploy to Render
-        env:
-          DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
-        run: |
-          if [ -n "$DEPLOY_HOOK" ]; then
-            curl --fail --silent --show-error -X POST "$DEPLOY_HOOK" > /dev/null
-          else
-            echo '::notice::Publicación lista. Configure RENDER_DEPLOY_HOOK para activar el despliegue.'
-          fi
