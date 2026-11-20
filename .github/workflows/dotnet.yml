@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: '10.0.x'
       - run: dotnet restore
@@ -22,7 +22,7 @@ jobs:
           dotnet published/Lab14_MauricioRdgz.dll --urls http://127.0.0.1:5140 > /tmp/lab14.log 2>&1 &
           trap 'kill $! 2>/dev/null || true' EXIT
           python3 tests/smoke_api.py http://127.0.0.1:5140
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: Lab14-publicado
           path: published/
