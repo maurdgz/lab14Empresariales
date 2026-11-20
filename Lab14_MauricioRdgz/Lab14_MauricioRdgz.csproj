@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../Lab14_MauricioRdgz.Application/Lab14_MauricioRdgz.Application.csproj" />
+    <ProjectReference Include="../Lab14_MauricioRdgz.Infrastructure/Lab14_MauricioRdgz.Infrastructure.csproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.1" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Lab14_MauricioRdgz.Domain/Lab14_MauricioRdgz.Domain.csproj" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+  </ItemGroup>
+</Project>
